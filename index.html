@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>syam-develop apps</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card: #ffffff;
+    --text: #23272e;
+    --sub: #7a8089;
+    --line: #e6e8ee;
+    --accent: #0d9488;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1114;
+      --card: #191c21;
+      --text: #eceef1;
+      --sub: #969da8;
+      --line: #2a2e36;
+      --accent: #2dd4bf;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 24px 16px 64px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  h1 { font-size: 22px; font-weight: 800; line-height: 1.5; margin-bottom: 8px; }
+  .lede { font-size: 13px; color: var(--sub); }
+  .app {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .app h2 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .app p { font-size: 13px; color: var(--sub); }
+  .app .link { font-size: 13px; color: var(--accent); }
+  footer {
+    margin-top: 28px;
+    font-size: 13px;
+    color: var(--sub);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>syam-develop apps</h1>
+    <p class="lede">個人開発アプリのサポート情報とプライバシーポリシーの置き場です。</p>
+  </header>
+
+  <a class="app" href="/quitsmoke/privacy.html">
+    <h2>卒煙記録</h2>
+    <p>禁煙の継続を記録・応援する iOS アプリ</p>
+    <span class="link">プライバシーポリシー →</span>
+  </a>
+
+  <footer>
+    お問い合わせ: <a href="mailto:syam.dev.apps@gmail.com">syam.dev.apps@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
